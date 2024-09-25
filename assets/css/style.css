@@ -38,6 +38,8 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
+
+
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -217,11 +219,40 @@ h6 {
 }
 
 /* Card */
+.cardDef {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  transition: background-color 0.4s ease-out, transform 0.4s ease-out;
+}
+
+
 .card {
   margin-bottom: 30px;
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  transition: background-color 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.card:hover {
+  background-color: #6d98c7; /* Azul clarinho */
+  transition: background-color 0.4s ease-out, transform 0.4s ease-out;
+  transform-origin: bottom right; /* Origem da animação no canto inferior direito */
+}
+
+.card:hover h5,
+.card:hover .ps-3 h6,
+.card:hover .ps-3 small {  
+  color: #ffffff; /* Texto branco no hover */
+  transition: color 0.4s ease-out; /* Transição suave da cor do texto */
+}
+
+.card h5, 
+.card .ps-3 h6,
+.card .ps-3 small {
+  transition: color 0.4s ease-out; /* Transição suave da cor original */
 }
 
 .card-header,
@@ -469,7 +500,7 @@ h6 {
 .header-nav .nav-icon {
   font-size: 22px;
   color: #012970;
-  margin-right: 25px;
+  margin-right: 10px;
   position: relative;
 }
 
@@ -821,17 +852,17 @@ h6 {
 }
 
 .dashboard .sales-card .card-icon {
-  color: #4154f1;
+  color: #70aa41;
   background: #f6f6fe;
 }
 
 .dashboard .revenue-card .card-icon {
-  color: #2eca6a;
+  color: #355d90;
   background: #e0f8e9;
 }
 
 .dashboard .customers-card .card-icon {
-  color: #ff771d;
+  color: #9d2929;
   background: #ffecdf;
 }
 
