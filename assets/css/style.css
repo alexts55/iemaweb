@@ -411,7 +411,7 @@ h6 {
 /* Para telas muito pequenas (smartphones) */
 @media (max-width: 480px) {
   .logo img {
-    max-width: 40%; /* Reduz a largura da imagem para 80% da tela em smartphones */
+    max-width: 45%; /* Reduz a largura da imagem para 80% da tela em smartphones */
   }
 }
 
